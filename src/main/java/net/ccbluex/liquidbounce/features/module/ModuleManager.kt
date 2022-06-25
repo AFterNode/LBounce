@@ -5,6 +5,7 @@
  */
 package net.ccbluex.liquidbounce.features.module
 
+import cn.afternode.lbounce.modules.player.AutoXNM
 import net.ccbluex.liquidbounce.LiquidBounce
 import net.ccbluex.liquidbounce.event.EventTarget
 import net.ccbluex.liquidbounce.event.KeyEvent
@@ -176,7 +177,8 @@ class ModuleManager : Listenable {
                 KeepAlive::class.java,
                 ResourcePackSpoof::class.java,
                 NoSlowBreak::class.java,
-                PortalMenu::class.java
+                PortalMenu::class.java,
+                AutoXNM::class.java
         )
 
         registerModule(NoScoreboard)

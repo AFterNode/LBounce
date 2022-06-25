@@ -1,13 +1,13 @@
 [
   {
-    "modid": "liquidbounce",
-    "name": "LiquidBounce",
-    "description": "",
+    "modid": "lbounce",
+    "name": "LBounce",
+    "description": "LiquidBounceLegacy-对线功能强化",
     "version": "${version}",
     "mcversion": "1.8.9",
-    "url": "https://liquidbounce.net",
+    "url": "https://afternode.cn/",
     "updateUrl": "",
-    "authorList": ["CCBlueX"],
+    "authorList": ["CCBlueX", "AFterNode"],
     "credits": "",
     "logoFile": "",
     "screenshots": [],

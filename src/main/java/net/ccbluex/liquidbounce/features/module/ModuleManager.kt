@@ -6,7 +6,9 @@
 package net.ccbluex.liquidbounce.features.module
 
 import cn.afternode.lbounce.modules.LModules.Hitokoto
+import cn.afternode.lbounce.modules.LModules.LTap
 import cn.afternode.lbounce.modules.player.AutoXNM
+import cn.afternode.lbounce.variables.Bypass
 import net.ccbluex.liquidbounce.LiquidBounce
 import net.ccbluex.liquidbounce.event.EventTarget
 import net.ccbluex.liquidbounce.event.KeyEvent
@@ -179,8 +181,11 @@ class ModuleManager : Listenable {
                 ResourcePackSpoof::class.java,
                 NoSlowBreak::class.java,
                 PortalMenu::class.java,
+
+                // LBounce
                 AutoXNM::class.java,
-                Hitokoto::class.java
+                Hitokoto::class.java,
+                LTap::class.java
         )
 
         registerModule(NoScoreboard)
@@ -189,6 +194,8 @@ class ModuleManager : Listenable {
         registerModule(AntiBot)
 
         ClientUtils.getLogger().info("[ModuleManager] Loaded ${modules.size} modules.")
+
+        Bypass.loadBypass()
     }
 
     /**

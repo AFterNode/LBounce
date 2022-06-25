@@ -6,20 +6,19 @@ import net.ccbluex.liquidbounce.features.module.Module;
 import net.ccbluex.liquidbounce.features.module.ModuleCategory;
 import net.ccbluex.liquidbounce.features.module.ModuleInfo;
 import net.ccbluex.liquidbounce.value.ListValue;
-import scala.reflect.internal.Types;
 
 import java.util.HashMap;
 
 @ModuleInfo(name = "Hitokoto", description = "从HitokotoAPI获取词句", category = ModuleCategory.LBounce)
 public class Hitokoto extends Module {
-    private final String[] categories = {"Animation", "Manga"};
+    private final String[] categories = {"Animation", "Manga", "Game"};
     private final ListValue Category = new ListValue("Category", categories, categories[0]);
 
     @Override
     public void onEnable() {
         HitokotoThread thread = new HitokotoThread(Category.get());
         thread.start();
-        this.toggle();
+        this.setState(false);
     }
 }
 
@@ -27,8 +26,17 @@ class HitokotoThread extends Thread {
     String category;
 
     HitokotoThread(String c) {
-        if (c.equals("Animation")) category = "a";
-        else if (c.equals("Manga")) category = "b";
+        switch (c) {
+            case "Animation":
+                category = "a";
+                break;
+            case "Manga":
+                category = "b";
+                break;
+            case "Game":
+                category = "c";
+                break;
+        }
     }
 
     public void run() {

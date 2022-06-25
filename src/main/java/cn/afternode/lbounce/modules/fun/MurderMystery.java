@@ -47,9 +47,9 @@ class MMThread extends Thread{
         List<String> murder = new ArrayList<>();
         List<String> hunter = new ArrayList<>();
         for (EntityPlayer e: worldClient.playerEntities.toArray(new EntityPlayer[]{})) {
-            if (e == MurderMystery.mc.thePlayer) return;
-            if (AntiBot.isBot(e)) return;
-            if (e.isInvisible()) return;
+            if (e == MurderMystery.mc.thePlayer) continue;
+            if (AntiBot.isBot(e)) continue;
+            if (e.isInvisible()) continue;
             for (ItemStack is: e.getInventory()) {
                 if (is.getItem() instanceof ItemSword) {
                     murder.add(e.getName());

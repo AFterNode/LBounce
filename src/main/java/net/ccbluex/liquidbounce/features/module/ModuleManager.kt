@@ -7,6 +7,7 @@ package net.ccbluex.liquidbounce.features.module
 
 import cn.afternode.lbounce.modules.LModules.Hitokoto
 import cn.afternode.lbounce.modules.LModules.LTap
+import cn.afternode.lbounce.modules.`fun`.MurderMystery
 import cn.afternode.lbounce.modules.player.AutoXNM
 import cn.afternode.lbounce.variables.Bypass
 import net.ccbluex.liquidbounce.LiquidBounce
@@ -185,7 +186,8 @@ class ModuleManager : Listenable {
                 // LBounce
                 AutoXNM::class.java,
                 Hitokoto::class.java,
-                LTap::class.java
+                LTap::class.java,
+                MurderMystery::class.java
         )
 
         registerModule(NoScoreboard)

@@ -27,7 +27,7 @@ class GuiWelcome : GuiScreen() {
         val font = Fonts.font35
 
         font.drawCenteredString("Thank you for downloading and installing our client!", width / 2F, height / 8F + 70, 0xffffff, true)
-        font.drawCenteredString("Here is some information you might find useful if you are using LiquidBounce for the first time.", width / 2F, height / 8F + 70 + font.fontHeight, 0xffffff, true)
+        font.drawCenteredString("Here is some information you might find useful if you are using LBounce(or LiquidBounce) for the first time.", width / 2F, height / 8F + 70 + font.fontHeight, 0xffffff, true)
 
         font.drawCenteredString("§lClickGUI:", width / 2F, height / 8F + 80 + font.fontHeight * 3, 0xffffff, true)
         font.drawCenteredString("Press ${Keyboard.getKeyName(LiquidBounce.moduleManager[ClickGUI::class.java]!!.keyBind)} to open up the ClickGUI", width / 2F, height / 8 + 80F + font.fontHeight * 4, 0xffffff, true)

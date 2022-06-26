@@ -2,7 +2,6 @@ package cn.afternode.lbounce.modules.LModules;
 
 import cn.afternode.lbounce.variables.Bypass;
 import cn.afternode.lbounce.variables.LMessages;
-import com.sun.org.apache.xml.internal.resolver.Catalog;
 import net.ccbluex.liquidbounce.event.EventTarget;
 import net.ccbluex.liquidbounce.event.KeyEvent;
 import net.ccbluex.liquidbounce.features.module.Module;

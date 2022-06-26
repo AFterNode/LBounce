@@ -12,8 +12,8 @@ import java.util.HashMap;
 @ModuleInfo(name = "Hitokoto", description = "从HitokotoAPI获取词句", category = ModuleCategory.LBounce,
 canEnable = false)
 public class Hitokoto extends Module {
-    private final String[] categories = {"Animation", "Manga", "Game"};
-    private final ListValue Category = new ListValue("Category", categories, categories[0]);
+    private static final String[] categories = {"Animation", "Manga", "Game"};
+    public static final ListValue Category = new ListValue("Category", categories, categories[0]);
 
     @Override
     public void onToggle(boolean state) {

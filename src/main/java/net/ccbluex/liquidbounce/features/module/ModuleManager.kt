@@ -5,6 +5,7 @@
  */
 package net.ccbluex.liquidbounce.features.module
 
+import cn.afternode.lbounce.modules.LModules.ChatBot
 import cn.afternode.lbounce.modules.LModules.Hitokoto
 import cn.afternode.lbounce.modules.LModules.LTap
 import cn.afternode.lbounce.modules.LModules.Title
@@ -191,7 +192,8 @@ class ModuleManager : Listenable {
                 LTap::class.java,
                 MurderMystery::class.java,
                 AntiVanish::class.java,
-                Title::class.java
+                Title::class.java,
+                ChatBot::class.java
         )
 
         registerModule(NoScoreboard)

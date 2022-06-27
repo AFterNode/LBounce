@@ -5,10 +5,7 @@
  */
 package net.ccbluex.liquidbounce.features.module
 
-import cn.afternode.lbounce.modules.LModules.ChatBot
-import cn.afternode.lbounce.modules.LModules.Hitokoto
-import cn.afternode.lbounce.modules.LModules.LTap
-import cn.afternode.lbounce.modules.LModules.Title
+import cn.afternode.lbounce.modules.LModules.*
 import cn.afternode.lbounce.modules.`fun`.MurderMystery
 import cn.afternode.lbounce.modules.misc.AntiVanish
 import cn.afternode.lbounce.modules.player.AutoXNM
@@ -193,7 +190,8 @@ class ModuleManager : Listenable {
                 MurderMystery::class.java,
                 AntiVanish::class.java,
                 Title::class.java,
-                ChatBot::class.java
+                ChatBot::class.java,
+                AutoGG::class.java
         )
 
         registerModule(NoScoreboard)
